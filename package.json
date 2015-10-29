@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-cucumber",
+  "version": "0.0.1",
+  "description": "eslint rules for cucumber steps",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "cucumber"
+  ],
+  "author": "Darrin Holst<darrinholst@gmail.com>",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node tests/lib/rules/async-then.js"
+  },
+  "devDependencies": {
+    "eslint": "~1.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/darrinholst/eslint-plugin-cucumber/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/darrinholst/eslint-plugin-cucumber.git"
+  }
+}
