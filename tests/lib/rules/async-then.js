@@ -11,6 +11,7 @@ ruleTester.run('async-then', rule, {
     'this.Then(/step/, function () {return "anything";})',
     'this.Then(/step/, function (done) {})',
     'this.Then(/step/, function (next) {})',
+    'this.Then(/step/, function (callback) {})',
     'this.Given(/step/, function () {})',
     'this.When(/step/, function () {})'
   ],
