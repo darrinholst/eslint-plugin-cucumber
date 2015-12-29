@@ -3,10 +3,7 @@
 var rule = require('../../../lib/rules/async-then');
 var RuleTester = require('eslint').RuleTester;
 
-var ruleTester = new RuleTester();
-
-ruleTester.run('async-then', rule, {
-
+new RuleTester().run('async-then', rule, {
   valid: [
     'this.Then(/step/, function () {return "anything";})',
     'this.Then(/step/, function (done) {})',

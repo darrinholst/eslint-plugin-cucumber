@@ -36,14 +36,16 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "cucumber/async-then": 2
+        "cucumber/async-then": 2,
+        "cucumber/no-restricted-tags": [2, "wip", "broken", "foo"]
     }
 }
 ```
 
 ## Supported Rules
 
-| Name          | Description                                                                                                         |
-| ------------- | -------------                                                                                                       |
-| async-then    | If you assume asynchronous steps then your Then steps should either return a promise or provide a callback function |
+| Name               | Description                                                                                                         |
+| -------------      | -------------                                                                                                       |
+| async-then         | If you assume asynchronous steps then your Then steps should either return a promise or provide a callback function |
+| no-restricted-tags | Restrict usage of specified tags                                                                                    |
 

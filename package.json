@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-cucumber",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "eslint rules for cucumber steps",
   "keywords": [
     "eslint",
@@ -11,7 +11,7 @@
   "author": "Darrin Holst<darrinholst@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node tests/lib/rules/async-then.js"
+    "test": "script/test.sh"
   },
   "devDependencies": {
     "eslint": "~1.2.0"
@@ -29,5 +29,8 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/darrinholst/eslint-plugin-cucumber.git"
+  },
+  "dependencies": {
+    "lodash": "~3.10.1"
   }
 }
