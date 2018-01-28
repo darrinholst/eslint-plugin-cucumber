@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-cucumber",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "eslint rules for cucumber steps",
   "keywords": [
     "eslint",
@@ -11,13 +11,20 @@
   "author": "Darrin Holst<darrinholst@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
-    "test": "script/test.sh"
+    "format": "prettier --loglevel warn --write \"**/*.js\"",
+    "test": "npm run --silent format && script/test.sh"
   },
   "devDependencies": {
-    "eslint": "~1.2.0"
+    "eslint": "~1.2.0",
+    "prettier": "^1.10.2"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "bracketSpacing": false
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "license": "MIT",
   "licenses": [
@@ -32,5 +39,9 @@
   },
   "dependencies": {
     "lodash": "~3.10.1"
+  },
+  "devDependencies": {
+    "eslint": "~1.2.0",
+    "prettier": "^1.10.2"
   }
 }
