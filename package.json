@@ -15,7 +15,7 @@
     "test": "npm run --silent format && script/test.sh"
   },
   "devDependencies": {
-    "eslint": "~1.2.0",
+    "eslint": "^4.0.0",
     "prettier": "^1.10.2"
   },
   "prettier": {
@@ -24,7 +24,7 @@
     "bracketSpacing": false
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6.0.0"
   },
   "license": "MIT",
   "licenses": [
@@ -39,9 +39,5 @@
   },
   "dependencies": {
     "lodash": "~3.10.1"
-  },
-  "devDependencies": {
-    "eslint": "~1.2.0",
-    "prettier": "^1.10.2"
   }
 }
