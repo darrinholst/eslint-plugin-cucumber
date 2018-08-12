@@ -6,9 +6,9 @@ const ruleTester = new RuleTester({
     }
 });
 
-const GIVEN_ERROR = 'Do not pass arrow functions to Given';
-const WHEN_ERROR = 'Do not pass arrow functions to When';
-const THEN_ERROR = 'Do not pass arrow functions to Then';
+const GIVEN_ERROR = 'Do not pass arrow functions to Given()';
+const WHEN_ERROR = 'Do not pass arrow functions to When()';
+const THEN_ERROR = 'Do not pass arrow functions to Then()';
 
 ruleTester.run('no-cucumber-arrows', rule, {
     valid: [
