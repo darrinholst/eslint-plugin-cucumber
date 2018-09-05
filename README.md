@@ -37,7 +37,8 @@ Then configure the rules you want to use under the rules section.
 {
     "rules": {
         "cucumber/async-then": 2,
-        "cucumber/no-restricted-tags": [2, "wip", "broken", "foo"]
+        "cucumber/no-restricted-tags": [2, "wip", "broken", "foo"],
+        "no-arrow-functions": 2
     }
 }
 ```
@@ -48,4 +49,4 @@ Then configure the rules you want to use under the rules section.
 | -------------      | -------------                                                                                                       |
 | async-then         | If you assume asynchronous steps then your Then steps should either return a promise or provide a callback function |
 | no-restricted-tags | Restrict usage of specified tags                                                                                    |
-
+| no-arrow-functions | Restrict usage of arrow functions on step definitions                                                               |
