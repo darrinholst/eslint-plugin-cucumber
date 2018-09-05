@@ -1,4 +1,4 @@
-# Disallow arrow functions on cucumber steps (no-cucumber-arrows)
+# Disallow arrow functions on cucumber steps (no-arrow-functions)
 
 When passing `World` and other objects via `this` you can run into issue with using arrow functions. 
 This rule catches any use of arrow functions to prevent errors caused by these objects being undefined on the `this` instance inside the step definition.

@@ -1,4 +1,4 @@
-const rule = require('../../../lib/rules/no-cucumber-arrows');
+const rule = require('../../../lib/rules/no-arrow-functions');
 const RuleTester = require('eslint').RuleTester;
 const ruleTester = new RuleTester({
     parserOptions: {
@@ -10,7 +10,7 @@ const GIVEN_ERROR = 'Do not pass arrow functions to Given()';
 const WHEN_ERROR = 'Do not pass arrow functions to When()';
 const THEN_ERROR = 'Do not pass arrow functions to Then()';
 
-ruleTester.run('no-cucumber-arrows', rule, {
+ruleTester.run('no-arrow-functions', rule, {
     valid: [
         'this.Given(/step/, function () {return "anything";})',
         'Given(/step/, function () {return "anything";})',

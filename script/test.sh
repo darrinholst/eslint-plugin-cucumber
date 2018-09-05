@@ -2,4 +2,4 @@
 
 node tests/lib/rules/async-then.js && \
 node tests/lib/rules/no-restricted-tags.js && \
-node tests/lib/rules/no-cucumber-arrows.js
+node tests/lib/rules/no-arrow-functions.js
