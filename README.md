@@ -50,3 +50,12 @@ Then configure the rules you want to use under the rules section.
 | async-then         | If you assume asynchronous steps then your Then steps should either return a promise or provide a callback function |
 | no-restricted-tags | Restrict usage of specified tags                                                                                    |
 | no-arrow-functions | Restrict usage of arrow functions on step definitions                                                               |
+
+## For Maintainers
+
+#### Releasing
+
+1. bump version
+1. `npm publish`
+1. tag release (`git tag vx.x.x && git push origin master --tags`)
+1. build github release (`npx release`)
