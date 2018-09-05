@@ -9,23 +9,6 @@
     "cucumber"
   ],
   "author": "Darrin Holst<darrinholst@gmail.com>",
-  "main": "lib/index.js",
-  "scripts": {
-    "format": "prettier --loglevel warn --write \"**/*.js\"",
-    "test": "npm run --silent format && script/test.sh"
-  },
-  "devDependencies": {
-    "eslint": "^4.0.0",
-    "prettier": "^1.10.2"
-  },
-  "prettier": {
-    "printWidth": 80,
-    "singleQuote": true,
-    "bracketSpacing": false
-  },
-  "engines": {
-    "node": ">=6.0.0"
-  },
   "license": "MIT",
   "licenses": [
     {
@@ -37,7 +20,24 @@
     "type": "git",
     "url": "http://github.com/darrinholst/eslint-plugin-cucumber.git"
   },
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "format": "prettier --loglevel warn --write \"**/*.js\"",
+    "test": "npm run --silent format && script/test.sh"
+  },
   "dependencies": {
-    "lodash": "~3.10.1"
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "prettier": "^1.14.2"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "bracketSpacing": false
   }
 }
