@@ -38,7 +38,7 @@ Then configure the rules you want to use under the rules section.
     "rules": {
         "cucumber/async-then": 2,
         "cucumber/no-restricted-tags": [2, "wip", "broken", "foo"],
-        "no-arrow-functions": 2
+        "cucumber/no-arrow-functions": 2
     }
 }
 ```
