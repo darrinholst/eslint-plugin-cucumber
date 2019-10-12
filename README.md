@@ -47,7 +47,7 @@ Then configure the rules you want to use under the rules section.
 
 | Name               | Description                                                                                                         |
 | -------------      | -------------                                                                                                       |
-| async-then         | If you assume asynchronous steps then your Then steps should either return a promise or provide a callback function |
+| async-then         | If you assume asynchronous steps then your Then steps should either be an async function, return a promise or provide a callback function |
 | no-restricted-tags | Restrict usage of specified tags                                                                                    |
 | no-arrow-functions | Restrict usage of arrow functions on step definitions                                                               |
 
