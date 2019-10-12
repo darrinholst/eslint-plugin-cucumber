@@ -29,7 +29,7 @@
     "test": "npm run --silent format && script/test.sh"
   },
   "dependencies": {
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "eslint": "^4.0.0",
