@@ -1,8 +1,12 @@
 const rule = require('../../../lib/rules/async-then');
 const RuleTester = require('eslint').RuleTester;
 
-new RuleTester().run('async-then', rule, {
+const tester = new RuleTester({parserOptions: {ecmaVersion: '2017'}});
+
+tester.run('async-then', rule, {
   valid: [
+    'this.Then(/step/, async function () {})',
+    'Then(/step/, async function () {})',
     'this.Then(/step/, function () {return "anything";})',
     'Then(/step/, function () {return "anything";})',
     'this.Then(/step/, function (done) {})',
