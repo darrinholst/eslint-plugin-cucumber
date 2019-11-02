@@ -37,6 +37,7 @@ Then configure the rules you want to use under the rules section.
 {
     "rules": {
         "cucumber/async-then": 2,
+        "cucumber/expression-type": 2,
         "cucumber/no-restricted-tags": [2, "wip", "broken", "foo"],
         "cucumber/no-arrow-functions": 2
     }
@@ -47,9 +48,10 @@ Then configure the rules you want to use under the rules section.
 
 | Name               | Description                                                                                                         |
 | -------------      | -------------                                                                                                       |
-| async-then         | If you assume asynchronous steps then your Then steps should either be an async function, return a promise or provide a callback function |
-| no-restricted-tags | Restrict usage of specified tags                                                                                    |
-| no-arrow-functions | Restrict usage of arrow functions on step definitions                                                               |
+| [async-then](docs/rules/async-then.md)                 | If you assume asynchronous steps then your Then steps should either be an async function, return a promise or provide a callback function |
+| [expression-type](docs/rules/expression-type.md)       | Restrict steps to either Cucumber Expressions or Regular Expressions                                                |
+| [no-restricted-tags](docs/rules/no-restricted-tags.md) | Restrict usage of specified tags                                                                                    |
+| [no-arrow-functions](docs/rules/no-arrow-functions.md) | Restrict usage of arrow functions on step definitions                                                               |
 
 ## For Maintainers
 

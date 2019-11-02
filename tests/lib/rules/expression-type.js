@@ -30,7 +30,7 @@ tester.run('expression-type', rule, {
       code: 'this.Given(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ]
     },
@@ -38,7 +38,7 @@ tester.run('expression-type', rule, {
       code: 'Given(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ]
     },
@@ -46,7 +46,7 @@ tester.run('expression-type', rule, {
       code: 'this.When(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ]
     },
@@ -54,7 +54,7 @@ tester.run('expression-type', rule, {
       code: 'When(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ]
     },
@@ -62,7 +62,7 @@ tester.run('expression-type', rule, {
       code: 'this.Then(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ]
     },
@@ -70,7 +70,7 @@ tester.run('expression-type', rule, {
       code: 'Then(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ]
     },
@@ -80,7 +80,7 @@ tester.run('expression-type', rule, {
       code: 'Given(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ],
       options: ['Cucumber']
@@ -89,7 +89,7 @@ tester.run('expression-type', rule, {
       code: 'When(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ],
       options: ['Cucumber']
@@ -98,7 +98,7 @@ tester.run('expression-type', rule, {
       code: 'Then(/step/, function () {})',
       errors: [
         {
-          message: "Only Cucumber Expressions should be used to match steps"
+          message: 'Only Cucumber Expressions should be used to match steps'
         }
       ],
       options: ['Cucumber']
@@ -109,7 +109,7 @@ tester.run('expression-type', rule, {
       code: 'Given("step", function () {})',
       errors: [
         {
-          message: "Only Regular Expressions should be used to match steps"
+          message: 'Only Regular Expressions should be used to match steps'
         }
       ],
       options: ['RegExp']
@@ -118,7 +118,7 @@ tester.run('expression-type', rule, {
       code: 'When("step", function () {})',
       errors: [
         {
-          message: "Only Regular Expressions should be used to match steps"
+          message: 'Only Regular Expressions should be used to match steps'
         }
       ],
       options: ['RegExp']
@@ -127,7 +127,7 @@ tester.run('expression-type', rule, {
       code: 'Then("step", function () {})',
       errors: [
         {
-          message: "Only Regular Expressions should be used to match steps"
+          message: 'Only Regular Expressions should be used to match steps'
         }
       ],
       options: ['RegExp']
