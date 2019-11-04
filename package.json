@@ -26,7 +26,8 @@
   },
   "scripts": {
     "format": "prettier --loglevel warn --write \"**/*.js\"",
-    "test": "npm run --silent format && script/test.sh"
+    "test": "npm run --silent format && script/test.sh",
+    "verify": "npm run format && npm run test"
   },
   "dependencies": {
     "lodash": "^4.17.15"
