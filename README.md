@@ -30,7 +30,6 @@ Add `cucumber` to the plugins section of your `.eslintrc` configuration file. Yo
 }
 ```
 
-
 Then configure the rules you want to use under the rules section.
 
 ```json
