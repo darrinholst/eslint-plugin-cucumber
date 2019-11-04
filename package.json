@@ -26,13 +26,15 @@
   },
   "scripts": {
     "format": "prettier --loglevel warn --write \"**/*.js\"",
-    "test": "npm run --silent format && script/test.sh"
+    "test": "mocha tests/**/*.js",
+    "verify": "npm run format && npm run test"
   },
   "dependencies": {
     "lodash": "^4.17.15"
   },
   "devDependencies": {
     "eslint": "^4.0.0",
+    "mocha": "^6.2.1",
     "prettier": "^1.14.2"
   },
   "prettier": {
