@@ -9,6 +9,13 @@
     "cucumber"
   ],
   "author": "Darrin Holst<darrinholst@gmail.com>",
+  "contributors": [
+    "Darrin Holst <darrinholst@gmail.com>",
+    "David Goss <dvdgoss@gmail.com>",
+    "Colin Wren <colin@gimpneek.com>",
+    "Matt Travi <programmer@travi.org>",
+    "Piotr Kuczynski <piotr.kuczynski@gmail.com>"
+  ],
   "license": "MIT",
   "licenses": [
     {
@@ -22,7 +29,7 @@
   },
   "main": "lib/index.js",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "scripts": {
     "format": "prettier --loglevel warn --write \"**/*.js\"",
