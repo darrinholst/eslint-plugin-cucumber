@@ -40,6 +40,7 @@ ruleTester.run('no-arrow-functions', rule, {
   invalid: [
     {
       code: 'this.Given(/step/, () => {return "anything";})',
+      output: 'this.Given(/step/, function() {return "anything";})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -48,6 +49,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Given(/step/, () => {return "anything";})',
+      output: 'Given(/step/, function() {return "anything";})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -56,6 +58,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Given(/step/, (done) => {})',
+      output: 'this.Given(/step/, function(done) {})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -64,6 +67,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Given(/step/, (done) => {})',
+      output: 'Given(/step/, function(done) {})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -72,6 +76,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Given(/step/, (next) => {})',
+      output: 'this.Given(/step/, function(next) {})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -80,6 +85,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Given(/step/, (next) => {})',
+      output: 'Given(/step/, function(next) {})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -88,6 +94,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Given(/step/, (callback) => {})',
+      output: 'this.Given(/step/, function(callback) {})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -96,6 +103,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Given(/step/, (callback) => {})',
+      output: 'Given(/step/, function(callback) {})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -104,6 +112,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Given(/step/, () => {})',
+      output: 'this.Given(/step/, function() {})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -112,6 +121,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Given(/step/, () => {})',
+      output: 'Given(/step/, function() {})',
       errors: [
         {
           message: GIVEN_ERROR
@@ -120,6 +130,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.When(/step/, () => {return "anything";})',
+      output: 'this.When(/step/, function() {return "anything";})',
       errors: [
         {
           message: WHEN_ERROR
@@ -128,6 +139,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'When(/step/, () => {return "anything";})',
+      output: 'When(/step/, function() {return "anything";})',
       errors: [
         {
           message: WHEN_ERROR
@@ -136,6 +148,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.When(/step/, (done) => {})',
+      output: 'this.When(/step/, function(done) {})',
       errors: [
         {
           message: WHEN_ERROR
@@ -144,6 +157,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'When(/step/, (done) => {})',
+      output: 'When(/step/, function(done) {})',
       errors: [
         {
           message: WHEN_ERROR
@@ -152,6 +166,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.When(/step/, (next) => {})',
+      output: 'this.When(/step/, function(next) {})',
       errors: [
         {
           message: WHEN_ERROR
@@ -160,6 +175,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'When(/step/, (next) => {})',
+      output: 'When(/step/, function(next) {})',
       errors: [
         {
           message: WHEN_ERROR
@@ -168,6 +184,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.When(/step/, (callback) => {})',
+      output: 'this.When(/step/, function(callback) {})',
       errors: [
         {
           message: WHEN_ERROR
@@ -176,6 +193,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'When(/step/, (callback) => {})',
+      output: 'When(/step/, function(callback) {})',
       errors: [
         {
           message: WHEN_ERROR
@@ -184,6 +202,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.When(/step/, () => {})',
+      output: 'this.When(/step/, function() {})',
       errors: [
         {
           message: WHEN_ERROR
@@ -192,6 +211,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'When(/step/, () => {})',
+      output: 'When(/step/, function() {})',
       errors: [
         {
           message: WHEN_ERROR
@@ -200,6 +220,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Then(/step/, () => {return "anything";})',
+      output: 'this.Then(/step/, function() {return "anything";})',
       errors: [
         {
           message: THEN_ERROR
@@ -208,6 +229,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Then(/step/, () => {return "anything";})',
+      output: 'Then(/step/, function() {return "anything";})',
       errors: [
         {
           message: THEN_ERROR
@@ -216,6 +238,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Then(/step/, (done) => {})',
+      output: 'this.Then(/step/, function(done) {})',
       errors: [
         {
           message: THEN_ERROR
@@ -224,6 +247,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Then(/step/, (done) => {})',
+      output: 'Then(/step/, function(done) {})',
       errors: [
         {
           message: THEN_ERROR
@@ -232,6 +256,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Then(/step/, (next) => {})',
+      output: 'this.Then(/step/, function(next) {})',
       errors: [
         {
           message: THEN_ERROR
@@ -240,6 +265,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Then(/step/, (next) => {})',
+      output: 'Then(/step/, function(next) {})',
       errors: [
         {
           message: THEN_ERROR
@@ -248,6 +274,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Then(/step/, (callback) => {})',
+      output: 'this.Then(/step/, function(callback) {})',
       errors: [
         {
           message: THEN_ERROR
@@ -256,6 +283,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Then(/step/, (callback) => {})',
+      output: 'Then(/step/, function(callback) {})',
       errors: [
         {
           message: THEN_ERROR
@@ -264,6 +292,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'this.Then(/step/, () => {})',
+      output: 'this.Then(/step/, function() {})',
       errors: [
         {
           message: THEN_ERROR
@@ -272,6 +301,7 @@ ruleTester.run('no-arrow-functions', rule, {
     },
     {
       code: 'Then(/step/, () => {})',
+      output: 'Then(/step/, function() {})',
       errors: [
         {
           message: THEN_ERROR

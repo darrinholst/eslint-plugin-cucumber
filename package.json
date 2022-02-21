@@ -14,7 +14,8 @@
     "David Goss <dvdgoss@gmail.com>",
     "Colin Wren <colin@gimpneek.com>",
     "Matt Travi <programmer@travi.org>",
-    "Piotr Kuczynski <piotr.kuczynski@gmail.com>"
+    "Piotr Kuczynski <piotr.kuczynski@gmail.com>",
+    "Ian Wilkinson <null@sgtwilko.f9.co.uk>"
   ],
   "license": "MIT",
   "licenses": [
@@ -40,7 +41,7 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^8.9.0",
     "mocha": "^6.2.2",
     "prettier": "^1.18.2"
   },
